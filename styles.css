@@ -1,0 +1,141 @@
+/* Minimamente divertido e moderno */
+
+body {
+    font-family: 'Teachers', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf4; /* Cor de fundo moderna e suave */
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Organiza a logo e o menu em coluna */
+    background-color: #9EBF99; /* Verde moderno */
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    position: absolute; /* Posiciona a logo em relação ao header */
+    left: 20px; /* Alinha a logo à esquerda do header */
+    top: 20px; /* Espaçamento superior */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    width: 100%; /* Faz com que o menu ocupe toda a largura disponível */
+    margin-top: 0x; /* Espaço suficiente abaixo da logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 16px; /* Ajuste o tamanho da fonte */
+    gap: 20px; /* Cria espaço entre os itens do menu */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 15px; /* Adiciona um pouco de padding para destacar os links */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block; /* Garante que o padding funcione corretamente */
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+section {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1, h2, p, ul li {
+    font-size: 1.2em; /* Tamanho de texto uniforme */
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2em; /* Tamanho maior para o título principal */
+    font-weight: normal;
+}
+
+h2 {
+    color: #9EBF99; /* Verde moderno */
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #9EBF99; /* Verde moderno */
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9EBF99; /* Verde moderno */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.show-footer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container {
+    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto;
+}
+
+img {
+    width: 20%; /* Imagem ocupará 80% da largura do contêiner */
+    max-width: 10000px; /* Largura máxima definida para evitar que fique muito grande */
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0; /* Adiciona margem para espaçamento vertical */
+}
